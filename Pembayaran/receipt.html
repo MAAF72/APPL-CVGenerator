@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/ripple.min.css">
+    <style>
+    html, body {
+        min-height: 100%;
+    }
+
+    body {
+        background-image: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
+    }
+    
+    .btn-next {
+        margin-left: 98%;
+        margin-bottom: -20%;
+        height: 50px;
+        width: 50px;
+        border-width: 0!important;
+    }
+    
+    .icon-middle {
+        margin-top: 30%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8 shadow rounded p-0 my-5">
+                <div class="d-flex flex-row">
+                    <div class="col-3 p-3 rounded-left bg-dark text-light">
+                        <div class="amount border-bottom py-3">
+                            <h6 class="font-weight-light"><i class="material-icons">account_balance_wallet</i>Amount</h6>
+                            <h6>Rp 1000,-</h6>
+                        </div>
+                        <div class="date border-bottom py-3">
+                            <h6 class="font-weight-light"><i class="material-icons">date_range</i>Date</h6>
+                            <h6>6 April 2020</h6>
+                        </div>
+                        <div class="amount border-bottom py-3">
+                            <h6 class="font-weight-light"><i class="material-icons">payment</i>Method</h6>
+                            <h6>Paypal</h6>
+                        </div>
+                    </div>
+                    <div class="col-9 p-3 rounded-right bg-light">
+                        <h2>Receipt #000000001</h2>
+                        <div class="d-flex justify-content-between py-5">
+                            <h5>Creative CV Design #1</h5>
+                            <h5>Rp 10000,-</h5>
+                        </div>
+                        <div class="info pb-4">
+                            <h5>Hello Mr X,</h5>
+                            <h6>You sent a payment of Rp 1000,-</h6>
+                            <h6>to CV Generator (<a href="#">cv_generator@live.com</a>)</h6>
+                        </div>
+                        <div class="btn btn-dark btn-next shadow rounded-circle">
+                            <span class="material-icons icon-middle">arrow_forward</span>
+                        </div>
+                        <div class="border-top">
+                            <small class="text-muted">We also send this receipt to your email (<a href="#">mr_x@live.com</a>)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/ripple.min.js"></script>
+    <script>
+        $('.btn').ripple();
+    </script>
+</body>
+</html>
